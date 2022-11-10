@@ -201,10 +201,7 @@ text-transform: uppercase;
   
 
 }
- .header-link{
-    
-}
-.header-link:hover,
+ .header-link:hover,
 .header-link:focus{
     color: var(--accent-color);
 }
