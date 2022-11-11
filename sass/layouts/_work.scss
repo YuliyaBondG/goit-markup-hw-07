@@ -1,19 +1,19 @@
-.section-work{
+.work{
     padding-bottom: 94px;
   }
-  .work-list .title{
+  .work__list .title{
   background-color: var(--primary-white-color);
   }
-  .work-list{
+  .work__list{
       display: flex;
       align-items: center;
       gap: 30px;
   }
-  .item-work-list{
+  .work__item-list{
     position: relative;
     
     }
-    .work-list-project{
+    .work__list-project{
     position: absolute;
     width: 370px;
     height: 70px;
