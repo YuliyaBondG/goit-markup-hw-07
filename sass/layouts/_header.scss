@@ -19,8 +19,7 @@
    
 }
 .current{
-  color: #2196F3;
-  
+  color: #2196F3;  
 }
 
 .current::after{
@@ -89,10 +88,18 @@
     align-items: center;
     fill: #757575;
     transition: color 250ms var(--timing-funktion);
-
-    
-     
 }
+.icon-envelope{
+  margin-right: 10px;   
+  width: 16px;
+  height: 12px; 
+   
+}
+.item{
+  display: flex;
+  align-items: center;
+}
+
 .header-mail:hover,
 .header-mail:focus{
     color: var(--accent-color);
@@ -111,7 +118,11 @@
     transition: color 250ms var(--timing-funktion);
     
 }
-
+.icon-vector{
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
+}
 .header-tel:hover,
 .header-tel:focus{
     color: var(--accent-color);
