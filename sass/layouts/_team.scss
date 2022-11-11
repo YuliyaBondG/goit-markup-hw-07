@@ -65,9 +65,10 @@ letter-spacing: 0.03em;
   fill: #AFB1B8;
   transition: background-color 250ms var(--timing-funktion),
   fill 250ms var(--timing-funktion);
-}
-.services-link:hover,
-.services-link:focus{
+  &:hover,
+  &:focus{
   background-color: var(--accent-color);
   fill: #FFFFFF;
+  }
 }
+

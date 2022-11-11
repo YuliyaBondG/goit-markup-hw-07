@@ -87,13 +87,14 @@
      align-items: center;
      justify-content: center;
      cursor: pointer;
+     &:hover,
+     &:focus{
+     fill:#2196F3;
+     transition: opacity 250ms var(--timing-funktion);
+     }
    }
    
-   .modal-close:hover,
-   .modal-close:focus{
-   fill:#2196F3;
-   transition: opacity 250ms var(--timing-funktion);
-   }
+   
    .backdrop.is-hidden{
      opacity: 0;
      visibility: hidden;
@@ -119,6 +120,18 @@
      padding-left: 30px;
      font-size: 14px;
      color: #757575;
+     &:focus{
+      border-color: #2196F3;
+    }
+    &::placeholder{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      }
    }
    .input-wrap{
      position: relative;
@@ -133,13 +146,12 @@
      left: 2%;
      top: 50%;
      transform: translateY(-50%);
+     .modal-input:focus + &{
+      fill: #2196F3;
+    }
    }
-   .modal-input:focus{
-     border-color: #2196F3;
-   }
-   .modal-input:focus + .modal-input-icon{
-     fill: #2196F3;
-   }
+   
+   
    .input-label span, .input-label {
      display: block;
      margin-bottom: 4px;
@@ -159,18 +171,18 @@
      border-radius: 4px;
      padding: 10px;
      resize: none;
+     &::placeholder{
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+      color: rgba(117, 117, 117, 0.5);
+      }
      }
    
-   .modal-input::placeholder, .modal-text::placeholder{
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 12px;
-   line-height: 1.17;
-   letter-spacing: 0.01em;
-   color: rgba(117, 117, 117, 0.5);
-   }
-   .checkbox{
+    .checkbox{
      -webkit-appearance:none;
      -moz-appearance:none;
      appearance:none;
@@ -193,19 +205,19 @@
      height: 15px;
      border: 2px solid #212121;
      border-radius: 4px;
+     .checkbox:checked + &{
+      border-color: #2196F3;
+      background-color: #2196F3;
+      background-image: url(../images/icon\ check.svg);
+      background-size: contain;
+      background-origin:border-box;
+    }
    }
    .checkbox-link{
      color: #2196F3;
    }
-   .checkbox:checked + .checkbox-icon{
-     border-color: #2196F3;
-     background-color: #2196F3;
-     background-image: url(../images/icon\ check.svg);
-     background-size: contain;
-     background-origin:border-box;
-   }
+   
    .checkbox-button{
-     
      text-align: center;
      justify-content: center;
      width: 200px;
@@ -222,6 +234,5 @@
        margin-left: auto;
        margin-right: auto;
      
-    
    }
    

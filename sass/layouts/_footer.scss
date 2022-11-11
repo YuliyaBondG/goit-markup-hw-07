@@ -25,6 +25,10 @@ letter-spacing: 0.03em;
 color: var(--color-foter-contact);
 text-decoration: none;
 font-style: normal;
+&:hover,
+&:focus{
+    color: var(--accent-color);
+}
 }
 .address-item-map{
 font-style: normal;
@@ -35,14 +39,10 @@ letter-spacing: 0.03em;
 color: var(--primary-white-color);
 text-decoration: none;
 font-style: normal;
-}
-.address-item:hover,
-.address-item:focus{
+&:hover,
+&:focus{
     color: var(--accent-color);
 }
-.address-item-map:hover,
-.address-item-map:focus{
-    color: var(--accent-color);
 }
 
 .footer-logo{
@@ -55,8 +55,7 @@ letter-spacing: 0.03em;
 color: var(--primary-white-color);
 }
 .servicer-footer{
-  
-  margin-left: 70px;
+ margin-left: 70px;
     
 }
 .text-footer{
@@ -88,7 +87,12 @@ color: var(--primary-white-color);
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms var(--timing-funktion),
   fill 250ms var(--timing-funktion);
+  &:hover,
+  &:focus{
+  background-color: #2196F3;
 }
+}
+
 .icon-background-footer{
   width: 44px;
   height: 44px;
@@ -98,9 +102,4 @@ color: var(--primary-white-color);
   width: 20px;
   height: 20px;
   fill:#FFFFFF;
-}
-.footer-link:hover,
-.footer-link:focus{
-  background-color: #2196F3;
-
 }
